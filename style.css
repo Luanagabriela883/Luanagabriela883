@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+
+  width: 100%;
+  padding: 2rem;
+}
+
+header {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+
+  border-bottom: 2px solid white;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  grid-column: 2;
+  grid-row: 2;
+
+  margin: 0;
+}
+
+.intro h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.intro p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2 / 5;
+
+  border-right: 2px solid white;
+
+  padding-right: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.widget,
+.formacao,
+.objetivo {
+  margin-bottom: 2rem;
+}
+
+.widget h3,
+.formacao h2,
+.objetivo h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.texto-intro,
+.objetivo p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.formacao ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.formacao li {
+  margin-bottom: 1rem;
+}
+
+.formacao li p {
+  margin: 0.3rem 0 0;
+  line-height: 1.4;
+}
+
+.barra {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.barra li {
+  margin-bottom: 1rem;
+}
+
+.barra progress {
+  width: 65%;
+  height: 14px;
+
+  margin-top: 0.5rem;
+
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projeto-posts {
+  margin-bottom: 2rem;
+}
+
+.projeto-posts>img {
+  display: block;
+  justify-items: center;
+
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto 1.5rem;
+
+
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(255, 254, 255);
+}
+
+.post {
+  width: 100%;
+
+  padding: 1.5rem;
+
+  border: 1px solid white;
+  box-shadow: 1px 4px 14px rgb(255, 254, 255);
+}
+
+.post h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.post p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  line-height: 1.4;
+}
+
+.post a {
+  color: white;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.projeto-titulo {
+  margin-bottom: 0 !important;
+}
+
+.contato {
+  grid-column: 2;
+  grid-row: 4;
+
+  width: 100%;
+
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+
+  text-align: center;
+
+  border: 1px solid white;
+  box-shadow: 1px 4px 14px rgb(255, 254, 255);
+}
+
+.contato h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.contato p {
+  margin-bottom: 1.2rem;
+}
+
+.botao {
+  display: inline-block;
+
+  padding: 0.7rem 1.2rem;
+
+  color: white;
+  text-decoration: none;
+
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: white;
+  color: rgb(123, 5, 50);
+}
+
+.botao-cv {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 1rem;
+
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.botao-cv:hover {
+    background-color: #ff4fa3;
+    transform: scale(1.05);
+}
+
+footer {
+  grid-column: 1 / -1;
+
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+
+  text-align: center;
+
+  border-top: 2px solid white;
+}
+
+footer p {
+  margin: 0 0 0.8rem;
+}
+
+footer i {
+  font-size: 2rem;
+}
+
+i {
+  color: yellow;
+}
+
+a {
+  color: white;
+}
